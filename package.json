@@ -1,0 +1,34 @@
+{
+  "name": "desafio-03ok",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.1.1",
+    "socket.io": "^4.7.4",
+    "socket.oi": "^0.0.1-security.8",
+    "websocket": "^1.0.34"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagoramallo/desafio3backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/santiagoramallo/desafio3backend/issues"
+  },
+  "homepage": "https://github.com/santiagoramallo/desafio3backend#readme",
+  "description": ""
+}
