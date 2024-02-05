@@ -6,7 +6,7 @@ const cartManager = new CartManager();
 
 router.post('/', async (req, res) => {
     try { 
-        const cart = await cartManager.createCart();
+        const cart = await cartManager.crearCarrito();
         res.json(cart);
     }
     catch (error) { 

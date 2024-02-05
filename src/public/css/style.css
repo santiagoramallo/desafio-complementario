@@ -1,10 +1,8 @@
 body {
-    background-color: bisque;
-}
-
-h1 {
-    color:rgb(10, 0, 208); 
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 .contenedorCards {
@@ -20,4 +18,48 @@ h1 {
     margin: 10px;
     padding: 10px;
     min-width: 200px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.chat-container {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#chatBox {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#messagesLogs {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
