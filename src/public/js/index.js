@@ -1,4 +1,4 @@
-const socket = io(); 
+/*const socket = io(); 
 
 let user; 
 const chatBox = document.getElementById("chatBox");
@@ -36,4 +36,4 @@ socket.on("message", data => {
     })
 
     log.innerHTML = messages;
-})
+}) */

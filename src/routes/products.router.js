@@ -8,13 +8,21 @@ const productManager = new ProductManager();
 
 router.get("/", async (req, res) => {
   try {
-      const limit = req.query.limit;
-      const productos = await productManager.getProducts();
-      if (limit) {
-          res.json(productos.slice(0, limit));
-      } else {
-          res.json(productos);
-      }
+      const limit = req.query.limit || 1;
+      const page = req.query.limit ||2;
+
+      const productos = await productManager.getProducts(limit, page);
+      console.log(productos)
+      res.render("index", {prod: productos,
+        hasPrevPage: productos.hasPrevPage,
+        hasNextPage: productos.hasNextPage,
+        prevPage: productos.prevPage,
+        nextPage: productos.nextPage,
+        currentPage: productos.page,
+        totalPages: productos.totalPages,
+        limit: productos.limit
+    })
+    
   } catch (error) {
       console.error("Error al obtener productos", error);
       res.status(500).json({

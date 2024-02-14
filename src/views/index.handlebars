@@ -1,0 +1,24 @@
+<h1>Mis Productos</h1>
+
+<div class="contenedorCards">
+    {{#each prod.docs}}
+
+    <div class="card">
+        <div class="contenido">
+            <h3>{{this.title}} </h3>
+            <p>{{this.description}} </p>
+            <p>{{this.price}} </p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+{{#if hasNextPage}}
+<a href="/api/products/?limit={{limit}}&page={{nextPage}}">Siguiente</a>
+{{/if}}
+
+{{#if hasPrevPage}}
+<a href="/api/products/?limit={{limit}}&page={{prevPage}}">Anterior</a>
+{{/if}}
+
+<p>Pagina {{currentPage}} de {{totalPages}}</p>
